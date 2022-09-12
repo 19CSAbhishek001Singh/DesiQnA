@@ -4,23 +4,19 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //components
 import NavBar from './components/NavBar.jsx';
-import DesiQna from './components/DesiQna';
 import OAPrep from './components/OAPrep';
-import DsaPrep from './components/DsaPrep';
+import DsaPrep from './components/DsaPrep/DsaPrep';
+import Post from './components/DsaPrep/Posts/Post';
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      {/* <a href='https://www.desiqna.in/'>DesiQnA</a> */}
       <Routes>
-        <Route path="/" element={<DesiQna />} />
-        {/* <Route
-          path="/"
-          element={<DesiQna />}
-          loc="https://www.desiqna.in/"
-        /> */}
         <Route path="/oa" element={<OAPrep />} />
         <Route path="/dsa" element={<DsaPrep />} />
+        {/* <Route path="/dsaArray" element={<Post />} /> */}
       </Routes>
     </BrowserRouter>
   );

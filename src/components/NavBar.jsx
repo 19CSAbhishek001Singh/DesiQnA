@@ -19,7 +19,7 @@ const NavBar = () => {
     return (
         <AppBar position='static'>
             <Toolbar>
-                <Tabs to="/">DesiQnA</Tabs>
+                <a href='https://www.desiqna.in/' style={{ "textDecoration": "none", "color": "inherit", "fontSize": "20px", "marginRight": "20px" }}>DesiQnA</a>
                 <Tabs to="/oa">OA Prep</Tabs>
                 <Tabs to="/dsa">DSA Prep</Tabs>
             </Toolbar>
